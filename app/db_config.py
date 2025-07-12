@@ -1,0 +1,5 @@
+DB_NAME = "tax_estimator_user_details"
+DB_USER = "postgres"
+DB_PASSWORD = "Paker11242003#"
+DB_HOST = "localhost"
+DB_PORT = "5432"
