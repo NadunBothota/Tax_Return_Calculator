@@ -9,7 +9,7 @@ services:
     environment:
       DB_NAME: tax_estimator_user_details
       DB_USER: postgres
-      DB_PASSWORD: Paker11242003#
+      DB_PASSWORD: **************
       DB_HOST: db
       DB_PORT: 5432
     volumes:
@@ -22,7 +22,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Paker11242003#
+      POSTGRES_PASSWORD: **************
       POSTGRES_DB: tax_estimator_user_details
     ports:
       - "5432:5432"
