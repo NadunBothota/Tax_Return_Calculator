@@ -1,4 +1,3 @@
-# Function to calculate income tax based on Australian tax brackets (as of current rates)
 def calculate_tax(income):
     if income <= 18200:
         return 0.0  # Tax-free threshold
