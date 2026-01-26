@@ -1,6 +1,6 @@
 def calculate_tax(income):
     if income <= 18200:
-        return 0.0  # Tax-free threshold
+        return 0.0 
     elif income <= 45000:
         return 0.19 * (income - 18200)  # 19% for income between $18,201–$45,000
     elif income <= 120000:
