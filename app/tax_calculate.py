@@ -10,11 +10,9 @@ def calculate_tax(income):
     else:
         return 51667 + 0.45 * (income - 180000)  # 45% for income above $180,000
 
-# Function to calculate Medicare Levy (2% of total income)
 def calculate_medicare_levy(income):
     return 0.02 * income
 
-# Function to calculate Medicare Levy Surcharge (MLS) based on income and PHI status
 def calculate_medicare_levy_surcharge(income, has_phic):
     if has_phic:
         return 0.0  # No surcharge if private health insurance (PHI) is held
