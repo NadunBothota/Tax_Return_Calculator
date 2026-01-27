@@ -4,7 +4,7 @@ def calculate_tax(income):
     elif income <= 45000:
         return 0.19 * (income - 18200)  
     elif income <= 120000:
-        return 5092 + 0.325 * (income - 45000)  # 32.5% for $45,001–$120,000
+        return 5092 + 0.325 * (income - 45000) 
     elif income <= 180000:
         return 29467 + 0.37 * (income - 120000)  # 37% for $120,001–$180,000
     else:
