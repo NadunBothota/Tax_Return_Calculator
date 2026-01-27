@@ -8,7 +8,7 @@ def calculate_tax(income):
     elif income <= 180000:
         return 29467 + 0.37 * (income - 120000)  
     else:
-        return 51667 + 0.45 * (income - 180000)  # 45% for income above $180,000
+        return 51667 + 0.45 * (income - 180000) 
 
 def calculate_medicare_levy(income):
     return 0.02 * income
