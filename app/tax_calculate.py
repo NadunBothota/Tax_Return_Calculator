@@ -15,7 +15,7 @@ def calculate_medicare_levy(income):
 
 def calculate_medicare_levy_surcharge(income, has_phic):
     if has_phic:
-        return 0.0  # No surcharge if private health insurance (PHI) is held
+        return 0.0  
     if income <= 90000:
         return 0.0  # No surcharge for income up to $90,000
     elif income <= 105000:
