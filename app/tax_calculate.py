@@ -17,9 +17,9 @@ def calculate_medicare_levy_surcharge(income, has_phic):
     if has_phic:
         return 0.0  
     if income <= 90000:
-        return 0.0  # No surcharge for income up to $90,000
+        return 0.0  
     elif income <= 105000:
-        return 0.01 * income  # 1% for income $90,001–$105,000
+        return 0.01 * income 
     elif income <= 140000:
         return 0.0125 * income  # 1.25% for $105,001–$140,000
     else:
