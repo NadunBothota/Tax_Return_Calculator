@@ -38,13 +38,10 @@ def main():
     # Loop through the number of records entered
     for i in range(count):
         
-        # Get gross income for the record
         income = float(input(f"Enter gross income #{i+1}: "))
         
-        # Get tax withheld for the record
         withheld = float(input(f"Enter tax withheld #{i+1}: "))
-        
-        # Validate record before sending to server
+     
         if not validate_record(income, withheld):
             print("Invalid record. Skipping.")
             continue  # Skip invalid records and continue loop
