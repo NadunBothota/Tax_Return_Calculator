@@ -15,13 +15,11 @@ def collect_records():
     count = int(input("How many biweekly records (1-26)? "))
     
     for i in range(count):
-        # Get taxable income
+    
         income = float(input(f"Enter taxable income #{i + 1}: "))
-        
-        # Get tax withheld amount
+
         withheld = float(input(f"Enter tax withheld #{i + 1}: "))
-        
-        # Validate the entered record
+ 
         if not validate_record(income, withheld):
             print("Invalid record. Withheld tax cannot exceed income.")
             return None
