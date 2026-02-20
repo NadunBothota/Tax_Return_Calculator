@@ -90,7 +90,7 @@ def main():
             else:
                 return
     
-    # If user does NOT have TFN
+
     else:
         records = collect_records()
         
@@ -108,6 +108,6 @@ def main():
         print(f"{key}: {value}")
 
 
-# Run the program
+
 if __name__ == "__main__":
     main()
