@@ -1,8 +1,6 @@
 import Pyro5.api
 from user_Authentication import login_user, register_user
 
-# Income must be >= 0
-# Withheld tax must be between 0 and income
 def validate_record(income, withheld):
     return income >= 0 and 0 <= withheld <= income
 
