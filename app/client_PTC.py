@@ -53,6 +53,5 @@ def main():
     print("\nAll valid records submitted to the database.")
 
 
-# Entry point of the program
 if __name__ == "__main__":
     main()
