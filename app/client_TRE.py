@@ -5,7 +5,6 @@ def validate_record(income, withheld):
     return income >= 0 and 0 <= withheld <= income
 
 
-# Collect multiple biweekly income records from the user
 def collect_records():
     records = []
     
@@ -22,7 +21,6 @@ def collect_records():
             print("Invalid record. Withheld tax cannot exceed income.")
             return None
         
-        # Store valid record as a tuple (income, withheld)
         records.append((income, withheld))
     
     return records
