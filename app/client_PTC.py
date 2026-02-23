@@ -6,7 +6,7 @@ def validate_record(income, withheld):
 
 
 def main():
-    # Display system welcome message
+    
     print("Welcome to PITRE - PTC Client\n")
     
     # Ask user whether to register or login
@@ -42,7 +42,7 @@ def main():
      
         if not validate_record(income, withheld):
             print("Invalid record. Skipping.")
-            continue  # Skip invalid records and continue loop
+            continue  
         
         # Send valid record to remote database server
         pitd.add_tax_record(tfn, income, withheld)
