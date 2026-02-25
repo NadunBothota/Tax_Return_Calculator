@@ -32,12 +32,12 @@ def main():
 
     choice = input("Do you want to Login or Register? ").strip()
     
-    # If user chooses Register, call register function
+
     if choice == "Register":
         if not register_user():
             return
     
-    # After registration (or if Login chosen), authenticate user
+  
     if not login_user():
         return
 
