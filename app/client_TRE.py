@@ -41,11 +41,11 @@ def main():
     if not login_user():
         return
 
-    # Get remote server URIs for Pyro connection
+
     server1_uri = input("Enter Server 1 URI: ")
     server2_uri = input("Enter Server 2 URI: ")
     
-    # Create proxy object to communicate with Server 1
+
     estimator = Pyro5.api.Proxy(server1_uri)
     
     # Set database server URI on Server 1
