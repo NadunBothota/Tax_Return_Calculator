@@ -8,7 +8,7 @@ def validate_record(income, withheld):
 def collect_records():
     records = []
     
-    # Ask how many records the user wants to enter (max 26 biweekly periods)
+    
     count = int(input("How many biweekly records (1-26)? "))
     
     for i in range(count):
@@ -29,7 +29,7 @@ def collect_records():
 def main():
     print("Welcome to PITRE - TRE Client\n")
     
-    # Ask user whether to register or login
+
     choice = input("Do you want to Login or Register? ").strip()
     
     # If user chooses Register, call register function
