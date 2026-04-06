@@ -48,7 +48,7 @@ def main():
         
         print(f"Record #{i+1} added.")
 
-    # Final confirmation message
+
     print("\nAll valid records submitted to the database.")
 
 
