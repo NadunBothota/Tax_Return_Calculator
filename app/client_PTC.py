@@ -27,7 +27,6 @@ def main():
     # Create Pyro proxy object to communicate with remote database server
     pitd = Pyro5.api.Proxy(server2_uri)
 
-    # Get user's Tax File Number (TFN)
     tfn = input("Enter TFN: ").strip()
     
     # Ask how many tax records the user wants to add
@@ -44,7 +43,7 @@ def main():
             print("Invalid record. Skipping.")
             continue  
         
-        # Send valid record to remote database server
+   
         pitd.add_tax_record(tfn, income, withheld)
         
         print(f"Record #{i+1} added.")
