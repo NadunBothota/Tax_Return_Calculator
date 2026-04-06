@@ -9,10 +9,10 @@ def main():
     
     print("Welcome to PITRE - PTC Client\n")
     
-    # Ask user whether to register or login
+   
     choice = input("Do you want to Login or Register? ").strip()
     
-    # If user selects Register, attempt registration first
+    
     if choice == "Register":
         if not register_user():
             return  # Exit if registration fails
